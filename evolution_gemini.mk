@@ -19,7 +19,7 @@
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
 # Inherit some common evolutionX stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Official evolution
@@ -30,7 +30,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BUILD_GRAPHENEOS_CAMERA := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_gemini
+PRODUCT_NAME := Dotos_gemini
 PRODUCT_DEVICE := gemini
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
