@@ -19,7 +19,7 @@
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
 # Inherit some common evolutionX stuff.
-$(call inherit-product, vendor/dot/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Official evolution
