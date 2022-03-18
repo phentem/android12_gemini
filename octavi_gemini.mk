@@ -18,14 +18,13 @@
 # Inherit from gemini device
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
-# Inherit some common evolutionX stuff.
+# Inherit some common octavi
 $(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Official OctaviOS
 OCTAVI_DEVICE_MAINTAINER := phentem
 TARGET_SUPPORTS_BLUR := true
-TARGET_BUILD_GRAPHENEOS_CAMERA := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS=true
 
