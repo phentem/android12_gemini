@@ -19,17 +19,17 @@
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
 # Inherit some common evolutionX stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Official Arcana
-ARCANA_MAINTAINER := phentem
+OCTAVI_MAINTAINER := phentem
 TARGET_SUPPORTS_BLUR := true
 TARGET_BUILD_GRAPHENEOS_CAMERA := true
 PREBUILT_LAWNCHAIR := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_gemini
+PRODUCT_NAME := octavi_gemini
 PRODUCT_DEVICE := gemini
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
