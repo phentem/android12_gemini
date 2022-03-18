@@ -98,10 +98,10 @@ PRODUCT_COPY_FILES += \
 #OctaviStuff
 YOUR_HW_PLATFORM := msm8996
 PRODUCT_USES_QCOM_HARDWARE := true
-PRODUCT_BOARD_PLATFORM := $(YOUR_HW_PLATFORM)
-SRC_AUDIO_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/audio
-SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/display
-SRC_MEDIA_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/media
+PRODUCT_BOARD_PLATFORM := $(msm8996)
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/$(msm8996)/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/$(msm8996)/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/$(msm8996)/media
 PRODUCT_SOONG_NAMESPACES += 
 $(LOCAL_PATH) 
-hardware/qcom-caf/$(YOUR_HW_PLATFORM)
+hardware/qcom-caf/$(msm8996)
