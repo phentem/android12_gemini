@@ -26,7 +26,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 OCTAVI_DEVICE_MAINTAINER := phentem
 TARGET_SUPPORTS_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-WITH_GAPPS=true
+
 
 
 # Device identifier. This must come after all inclusions.
