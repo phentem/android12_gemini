@@ -95,13 +95,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8996-lite.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-8996-lite.conf \
     $(LOCAL_PATH)/configs/thermal-engine-8996.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-8996.conf
     
-#OctaviStuff
-YOUR_HW_PLATFORM := msm8996
-PRODUCT_USES_QCOM_HARDWARE := true
-PRODUCT_BOARD_PLATFORM := $(msm8996)
-SRC_AUDIO_HAL_DIR := hardware/qcom-caf/$(msm8996)/audio
-SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/$(msm8996)/display
-SRC_MEDIA_HAL_DIR := hardware/qcom-caf/$(msm8996)/media
-PRODUCT_SOONG_NAMESPACES += 
-$(LOCAL_PATH) 
-hardware/qcom-caf/$(msm8996)
+
