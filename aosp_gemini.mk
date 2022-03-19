@@ -18,23 +18,26 @@
 # Inherit from gemini device
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
-# Inherit some common evolutionX stuff.
+# Inherit some common AOSP stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
 
-# Official AOSP
-AOSP_BUILD_TYPE := UNOFFICIAL
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_BUILD_GRAPHENEOS_CAMERA := true
-
-# Device identifier. This must come after all inclusions.
+# Device identifier
 PRODUCT_NAME := aosp_gemini
 PRODUCT_DEVICE := gemini
 PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Gemini
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_CHARACTERISTICS := nosdcard
-
+# Device identifier. This must come after all inclusions.
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+WITH_GMS := false
+
+IS_PHONE := true
+CUSTOM_BUILD_TYPE := UNOFFICIAL
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ACORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
+Elixir_MAINTAINER := phentem
