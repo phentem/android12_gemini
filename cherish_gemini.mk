@@ -19,17 +19,19 @@
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
 # Inherit some common evolutionX stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/cherish/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_QUICK_TAP := true
 
-# Official Arcana
-ARCANA_MAINTAINER := phentem
-TARGET_SUPPORTS_BLUR := true
-TARGET_BUILD_GRAPHENEOS_CAMERA := true
-PREBUILT_LAWNCHAIR := true
+# Cherish Official
+CHERISH_BUILD_TYPE := UNOFFICIAL
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=phentem
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_gemini
+PRODUCT_NAME := cherish_gemini
 PRODUCT_DEVICE := gemini
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
