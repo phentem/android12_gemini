@@ -27,6 +27,7 @@ PRODUCT_DEVICE := gemini
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Gemini
 PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_CHARACTERISTICS := nosdcard
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
